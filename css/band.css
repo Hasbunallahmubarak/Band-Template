@@ -1,0 +1,387 @@
+@charset"UTF-8";
+*{margin: 0px;box-sizing: border-box;}
+html,body{height: 100%;}
+body{
+	font-family: "Arial", sans-serif;
+	background-color: #fff;
+	z-index: -1;
+}
+div{overflow: hidden;}
+nav, .nav{
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+	left:0px;
+	background-color: #000;
+}
+.nav{display: none;}
+img{width: 100%;display: block;}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+nav a, .nav a{
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	float: left;
+	padding:15px 20px;
+	display: inline-block;
+}
+nav a:hover{
+	color: #000;
+	background-color: #ddd;
+}
+nav > a{
+	float: right;
+	font-size: 20px;
+	padding: 12px 20px;
+}
+nav > div{float: left;}
+#menu{
+	float: right;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+	display: inline-block;
+}
+#menu:hover{
+	color: #000;
+	background-color: #ccc;
+}
+#nav{
+	display:none;
+	width: 100%;
+}
+#nav a{
+	display: block;
+	text-align: left;
+	width: 100%;
+	float: none;
+}
+#nav a:hover, .nav > a:hover{
+	color: #000;
+	background-color: #ccc;
+}
+.drop-down{
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+}
+.dropdown-content{
+	position: absolute;
+	min-width: 150px;
+	z-index: 1;
+	display: none;
+	overflow: hidden;
+	background-color: #fff;
+}
+.dropdown-content a{
+	padding: 10px;
+	display: block;
+	float: none;
+	text-align: left;
+	color: #000;
+	text-transform: capitalize;
+}
+.dropbtn{
+	border:none;
+	font-family: inherit;
+	text-transform: uppercase;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 15px 20px;
+	background-color: inherit;
+}
+.dropbtn:hover
+{
+	color: #000;
+	background-color: #ddd;
+}
+.drop-down:hover .dropdown-content{
+	display: block;
+}
+.drop-down:hover .dropbtn{
+	color: #000;
+	background-color: #ddd;
+}
+.slideshow{position: relative;}
+.slideshow > div{
+	position: absolute;
+	bottom: 20px; 
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
+.slideshow h2{
+	font-weight: lighter;
+	margin: 20px 0px;
+}
+.slideshow p{font-weight: bold;}
+section{
+	overflow: hidden;
+	padding: 30px;
+}
+section > div{
+	max-width: 800px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+h1{
+	font-weight: lighter;
+	color: #000;
+	font-size: 200%;
+	letter-spacing: 5px;
+	text-align: center;
+	margin: 20px 0px;
+}
+h4{
+	font-style: italic;
+	margin: 10px 0px;
+	text-align: center;
+	color: #888;
+	font-weight: lighter;
+}
+section p{
+	font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+	margin: 20px 0px;
+}
+.flex{display: flex;}
+.band > div{
+	width: 30%;
+	float: left;
+	margin: 2%;
+	padding: 30px;
+	text-align: center;
+}
+h5{
+	font-size: 16px;
+	margin: 10px 0px;
+	text-align: center;
+	font-weight: lighter;
+}
+#tour{
+	background-color: #000;
+	color: #fff;
+}
+#tour h1{color: #fff;}
+.card{
+	background-color: #fff;
+	color: #777;
+	margin: 30px 0px;
+}
+.card p{
+	padding: 10px;
+	margin: 0px;
+	border-bottom: 1px solid #ccc;
+}
+.card span{
+	color: #fff;
+	margin: 0px 20px;
+	padding: 0px 5px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	background-color: rgba(255,50,50,0.9);
+	display: inline-block;
+}
+span.three{
+	float: right;
+	padding:1px 10px;
+	border-radius: 50%;
+	background-color: #000;
+}
+.sat > div{
+	width: 32%;
+	float: left;
+
+	margin: 20px 0px;
+	background-color: #fff;
+}
+.sat .middle{
+	margin: 20px 2%;
+}
+.sat > div > div{
+	padding: 10px;
+	color: #000;
+}
+.sat h4{
+	color: #000;
+	font-style: normal;
+	text-align: left;
+	font-weight: bold;
+}
+.sat h6{
+	font-weight: lighter;
+	font-size: 17px;
+	color: #888;
+}
+.sat p{margin: 10px 0px;}
+.sat img:hover{opacity: 0.9;}
+.sat a{
+	background-color: #000;
+	padding: 10px 20px;
+	color: #fff;
+	display: inline-block;
+	margin: 10px 0px;
+}
+.sat a:hover{
+	color: #000;
+	background-color: #ccc;
+}
+.contact{
+	margin: 50px 0px;
+}
+.contact > div{
+	width: 50%;
+	float: left;
+}
+#contact .contact h3{
+	font-weight: lighter;
+	margin: 15px 0px;
+}
+.contact .fa{margin-right: 10px;
+}
+input{
+	width: 100%;
+	margin: 10px 0px;
+	padding: 10px;
+	outline: none;
+	border:1px solid #ccc;
+}
+.same{
+	width: 49%;
+	float: left;
+}
+.same:first-child{margin-right: 2%;}
+input[type="submit"]{
+	width: 90px;
+	color: #fff;
+	float: right;
+	border:none;
+	cursor: pointer;
+	transition: 0.3s;
+	text-transform: uppercase;
+	background-color: #000;
+}
+input[type="submit"]:hover{
+	color: #000;
+	background-color: #ccc;
+}
+.map{
+	filter: grayscale(50%);
+	max-height: 550px;
+}
+footer{
+	padding: 50px;
+	color: #000;
+	text-align: center;
+	background-color: #eee;
+}
+footer .fa{
+	font-size:25px;
+	padding: 10px;
+	margin: 5px;
+}
+footer a:hover{text-decoration: underline;}
+footer .fa:hover{cursor: pointer;}
+#ticket{
+	position: fixed;
+	top: 15%;
+	width: 70%;
+	z-index: 3;
+	display: none;
+	margin: 0px 15%;
+	animation: fromTop 1s;
+	background-color: #fff;
+}
+#ticket h1{
+	padding: 40px;
+	font-size: 30px;
+	margin: 0px;
+	color: #fff;
+	letter-spacing: 5px;
+	background-color: rgb(0, 153, 153);
+}
+#ticket p{margin: 10px 0px;}
+#ticket > form{
+	padding: 10px;
+	overflow: hidden;
+}
+#ticket input[type="submit"]{
+	width: 100%;
+	padding: 20px;
+	background-color: rgb(0, 153, 153);
+}
+#ticket input[type="submit"]:hover{
+	background-color: #ccc;
+}
+#ticket div{
+	padding: 10px;
+}
+#ticket span{
+	position: absolute;
+	padding: 10px 20px;
+	color: #fff;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	font-size: 30px;
+}
+#ticket span:hover{
+	color: #000;
+	background-color: #ddd;
+}
+#ticket input{font-size: 16px;}
+#ticket button{
+	color: #fff;
+	padding: 8px 10px;
+	border:none;
+	outline: none;
+	font-size: 15px;
+	background-color: rgba(255, 0, 0, 0.8);
+}
+#ticket button:hover{
+	color: #000;
+	cursor: pointer;
+	background-color: #ddd;
+}
+#ticket div > p{
+	float: right;
+	margin: 0px;
+	padding: 8px;
+}
+#ticket a{
+	color:rgb(0, 128, 128);
+	text-decoration: underline;
+}
+#overlay{
+	position: fixed;
+	top: 0px;
+	background-color: rgba(0,0,0,0.4);
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	display: none;
+}
+@keyframes fromTop{
+	from{top: -900px}
+}
+@media screen and (max-width: 550px){
+	section{padding: 30px 20px;}
+	.flex{display: block;}
+	.sat div{width: 100%;}
+	nav{display: none;}
+	.nav{display: block;}
+	.band > div{width: 80%;margin: 2% 10%;}
+	.middle {margin: 30px 0px;}
+	.contact > div{width: 100%;float: none;}
+	.same{width: 100%;float: none;}
+	.same:first-child{margin-right: 0px;}
+}
