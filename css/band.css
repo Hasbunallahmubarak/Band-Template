@@ -379,6 +379,7 @@ footer .fa:hover{cursor: pointer;}
 	.sat div{width: 100%;}
 	nav{display: none;}
 	.nav{display: block;}
+	#ticket{width: 90%;}
 	.band > div{width: 80%;margin: 2% 10%;}
 	.middle {margin: 30px 0px;}
 	.contact > div{width: 100%;float: none;}
